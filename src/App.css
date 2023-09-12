@@ -1,0 +1,187 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 10px 20px;
+  border-bottom: 3px solid #ccc;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.option {
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.option .bi-chevron-down {
+  margin-left: 5px;
+  font-size: 1rem;
+  color: black; 
+}
+
+.option:hover .dropdown-content {
+  display: block;
+}
+
+.resources {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.resources:hover .dropdown-content {
+  display: block;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.start-trial {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.body{
+  background:linear-gradient(to right bottom,white 50%,skyblue,#00bf72);
+  height: 100vh;
+  padding: 20px;
+}
+
+.body-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-background {
+  height: 40px;
+  padding: 3px;
+  border: 2px solid #00bf72;
+  border-radius:25px;
+}
+
+
+button {
+  padding: 10px 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+}
+
+button.selected {
+  background-color: black;
+  color: white;
+}
+
+.container-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 18px;
+  border: 2px solid transparent;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer; 
+}
+
+.container.clicked {
+  border-color: #00bf72;
+}
+
+
+.container h1 {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.container div > p {
+  background-color: #cbf2e9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.included-options {
+  margin-top: 20px;
+}
+
+.included-options h2 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.check-icons {
+  color:#00bf72;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.try-for-free-button{
+  text-align: center;
+  padding-top: 25px;
+}
+.try-for-free {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .button-background {
+    display: none;
+  }
+}
+
+
+
